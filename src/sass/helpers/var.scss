@@ -1,0 +1,63 @@
+$Kaushan_Script: "Kaushan Script",
+cursive;
+$Roboto: 'Roboto',
+sans-serif;
+$Montserrat: 'Montserrat',
+sans-serif;
+$color-primary-grey: #999999;
+$color-secondary-dark: #333333;
+$white-color: rgb(255, 255, 255);
+$transition: all 200ms ease-in;
+
+%primary-text {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+%secondary-text {
+  font-size: 14px;
+  line-height: 17px;
+  transition: ease-in 200ms;
+}
+
+%list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+%link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+%button {}
+
+%Kaushan_Script {
+  color: $white-color;
+  font-family: $Kaushan_Script;
+  display: block;
+}
+
+@mixin center-flex($type: 'all') {
+  display: flex;
+  flex-wrap: wrap;
+
+  @if $type=='all' {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @else if $type=='hor' {
+    justify-content: center;
+  }
+
+  @else if $type=='ver' {
+    align-items: center;
+  }
+
+  @else if $type=='beetwen-ver' {
+    justify-content: space-between;
+    align-items: center;
+  }
+}

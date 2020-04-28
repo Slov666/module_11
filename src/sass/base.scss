@@ -1,0 +1,46 @@
+html {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+*,
+*::before *::before {
+  box-sizzing: inherit;
+  margin: 0 auto;
+  padding: 0;
+}
+
+* {
+  /* outline: 1px solid red; */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: $Kaushan_Script;
+  font-family: $Roboto;
+  font-family: $Montserrat;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-primary-grey;
+}

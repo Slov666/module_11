@@ -1,0 +1,83 @@
+.page-header {
+  background-image: url('/images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: ease 200ms;
+  padding-bottom: 187px;
+}
+
+.page-header__nav {
+  @include center-flex('beetwen-ver');
+  padding: 30px 0px 186px 0px;
+}
+
+.site-navigation {
+  @extend %list;
+  @include center-flex('beetwen-ver');
+  flex-basis: 634px;
+  margin: 0;
+}
+
+.site-navigation__icon-svg {
+  fill: $white-color;
+  width: 20px;
+  height: 20px;
+}
+.site-navigation__item{
+  &:hover .site-navigation__icon-svg{
+    fill: #fce38a;
+    transition: fill 200ms ease-in;
+  }
+}
+
+.site-navigation__link {
+  @extend %link;
+  @extend %secondary-text;
+  color: $white-color;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  transition: $transition;
+  &:hover{
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+  }
+}
+
+.page-nav__logo {
+  @extend %link;
+  font-size: 30px;
+  line-height: 36px;
+  color: $white-color;
+  font-weight: 700;
+}
+
+.page-header__title {
+  width: 830px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 150px;
+  line-height: 140px;
+  color: $white-color;
+  margin-bottom: 125px;
+  text-transform: uppercase;
+}
+
+.page-header__title--cursive {
+  font-size: 72px;
+  line-height: 86px;
+  @extend %Kaushan_Script;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.page-header__button {
+  border: 3px solid #ffffff;
+  background: transparent;
+  color: $white-color;
+  @extend %secondary-text;
+  text-transform: uppercase;
+  width: 164px;
+  height: 40px;
+  font-weight: 700;
+}
