@@ -1,0 +1,87 @@
+.card {
+  @extend %list;
+  @include center-flex('beetwen-ver');
+}
+
+.card__box--img {
+  position: relative;
+  width: 360px;
+  height: 445px;
+  margin-bottom: 30px;
+}
+.card__item{
+  text-align: center;
+}
+.card__img--hover {
+  @extend %list;
+  @include center-flex('center');
+  position: absolute;
+  width: 360px;
+  height: 445px;
+  top: 0;
+  visibility: hidden;
+  transition: box-shadow 200ms ease, transform 200ms ease, background 200ms ease;
+  .card__item:hover &{
+    visibility: visible; 
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0px $color-secondary-sky;
+  }
+}
+.card__img--hover-1 {
+  background: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.85) 0%,
+      rgba(243, 129, 129, 0.85) 100%, ),
+    url('/images/person/person1@1x.jpg');
+
+}
+
+.card__img--hover-2 {
+  background: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.85) 0%,
+      rgba(243, 129, 129, 0.85) 100%, ),
+    url('/images/person/person2@1x.jpg');
+
+}
+
+.card__img--hover-3 {
+  background: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.85) 0%,
+      rgba(243, 129, 129, 0.85) 100%, ),
+    url('/images/person/person3@1x.jpg');
+   
+
+}
+
+.card__icon {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  margin-right: 1px;
+  text-align: center;
+  line-height: 72px;
+  &:hover {
+    transition: background 200ms ease;
+    background-color: $color-secondary-pink;
+  }
+}
+
+.card__icon-svg {
+  fill: $color-secondary-pink;
+  width: 28px;
+  height: 28px;
+  .card__icon:hover &{
+    transition: fill 300ms ease;
+    fill: $white-color;
+  }
+}
+.card__name{
+color: $color-secondary-dark;
+@extend %secondary-text;
+font-weight: bold;
+margin: 0 auto;
+margin-bottom: 14px;
+}
+.card__job{
+  margin: 0 auto;
+}

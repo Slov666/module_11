@@ -6,12 +6,20 @@ $Montserrat: 'Montserrat',
 sans-serif;
 $color-primary-grey: #999999;
 $color-secondary-dark: #333333;
+$color-secondary-pink: #f38181;
+$color-secondary-yellow: #fce38a;
+$color-secondary-sky: #95e1d3;
 $white-color: rgb(255, 255, 255);
 $transition: all 200ms ease-in;
 
 %primary-text {
   font-size: 15px;
   line-height: 24px;
+}
+
+%section-title-text {
+  font-size: 30px;
+  line-height: 36px;
 }
 
 %secondary-text {
@@ -31,7 +39,11 @@ $transition: all 200ms ease-in;
   display: inline-block;
 }
 
-%button {}
+%button {
+  border: none;
+  cursor: pointer;
+
+}
 
 %Kaushan_Script {
   color: $white-color;
@@ -39,11 +51,16 @@ $transition: all 200ms ease-in;
   display: block;
 }
 
-@mixin center-flex($type: 'all') {
+@mixin pseudo ($display:block, $content:'') {
+  display: $display;
+  content: $content;
+}
+
+@mixin center-flex($type: 'beetwwen-ver') {
   display: flex;
   flex-wrap: wrap;
 
-  @if $type=='all' {
+  @if $type=='center' {
     justify-content: center;
     align-items: center;
   }

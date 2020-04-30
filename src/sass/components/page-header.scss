@@ -26,7 +26,7 @@
 }
 .site-navigation__item{
   &:hover .site-navigation__icon-svg{
-    fill: #fce38a;
+    fill: $color-secondary-yellow;
     transition: fill 200ms ease-in;
   }
 }
@@ -39,8 +39,8 @@
   padding-bottom: 10px;
   transition: $transition;
   &:hover{
-    color: #fce38a;
-    border-bottom: 3px solid #fce38a;
+    color: $color-secondary-yellow;
+    border-bottom: 3px solid $color-secondary-yellow;
   }
 }
 
@@ -72,7 +72,7 @@
 }
 
 .page-header__button {
-  border: 3px solid #ffffff;
+  border: 3px solid $white-color;
   background: transparent;
   color: $white-color;
   @extend %secondary-text;
@@ -80,4 +80,5 @@
   width: 164px;
   height: 40px;
   font-weight: 700;
+  cursor: pointer;
 }

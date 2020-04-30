@@ -5,5 +5,9 @@
 @import 'normalize.scss';
 @import 'base.scss';
 
-@import 'components/page-header.scss';
-
+@import 'components/section';
+@import 'components/page-header';
+@import 'components/section__title';
+@import 'components/features';
+@import 'components/card';
+@import 'components/footer';

@@ -1,0 +1,47 @@
+.footer {
+  border-top: 1px solid rgba(153, 153, 153, .35);
+  padding: 10px 0px 10px 0px;
+  @include center-flex('beetwen-ver');
+}
+
+.footer__caption {
+  color: $color-secondary-dark;
+  @extend %secondary-text;
+}
+
+.footer__caption--color {
+  color: $color-secondary-pink;
+}
+
+.footer__form {
+  @include center-flex('center');
+}
+
+.footer__input-email {
+  padding: 11px 32px 11px 10px;
+  border: 1px solid rgba(153, 153, 153, .35);
+
+  &::placeholder {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 15px;
+    color: #cccccc;
+    font-style: italic;
+  }
+}
+
+.footer__input-email[placeholder]:focus:valid {
+  background-color: rgba(17, 192, 76, 0.2);
+}
+
+.footer__input-email[placeholder]:focus:invalid {
+  background-color: rgba(223, 65, 45, 0.2);
+}
+
+.footer__button {
+  @extend %button;
+  background-color: $color-secondary-sky;
+  color: $white-color;
+  text-align: center;
+  padding: 12px 35px;
+}
